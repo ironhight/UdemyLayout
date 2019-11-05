@@ -3,3 +3,28 @@
     font-size: $fs;
     font-weight: $fw;
 }
+@mixin button($fs, $fw, $color, $bg-color, $boder, $pd-y, $pd-x, $bg-hover) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+    background-color: $bg-color;
+    border: 1px solid $boder;
+    padding: $pd-y $pd-x;
+    &:hover {
+        background-color: $bg-hover;
+    }
+}
+//map-has-key tra ve true khi breakpoint co trong list breakpoints, $value tra ve gia tri key cua list
+@mixin reponds-to($breakpoint) {
+    @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+        $value: map-get(
+            $map: $breakpoints,
+            $key: $breakpoint
+        );
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    } @else {
+        @warn "`{$breakpoint}` isn't in breakpoints";
+    }
+}

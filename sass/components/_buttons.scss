@@ -1,0 +1,26 @@
+.btn {
+    &--login {
+        @include button(
+            $fs-0,
+            $fw-bold-0,
+            $color-gray-4,
+            $color-white-0,
+            $color-black-light,
+            $pd-1 + 1,
+            $pd-1 + 2,
+            $color-gray-1
+        );
+    }
+    &--signup {
+        @include button(
+            $fs-0,
+            $fw-bold-0,
+            $color-white-0,
+            $color-red-0,
+            $color-red-0,
+            $pd-1 + 1,
+            $pd-1 + 2,
+            $color-red-1
+        );
+    }
+}

@@ -1,0 +1,55 @@
+.cover {
+    background-image: url("../img/cover.jpg");
+    @extend .background_cover;
+    position: relative;
+    .cover__container {
+        max-width: 500px;
+        position: absolute;
+        top: 30%;
+        left: 11%;
+        .cover__title {
+            @include text($color-white-0, $fs-4, $fw-bold-0);
+        }
+        .cover__detail {
+            @include text($color-white-0, $fs-2 - 2, $fw-normal);
+        }
+        .form_cover_search {
+            input {
+                background-color: $color-white-0;
+                font-size: $fs-0;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                -ms-border-radius: 0;
+                -o-border-radius: 0;
+                border-right: 1px solid transparent;
+                padding: $pd-1 + 2 $pd-1 + 5;
+                &:focus {
+                    box-shadow: none;
+                    border: 1px solid $color-white-0;
+                }
+            }
+            .input-group-text {
+                // padding: 6px 12px;
+                background-color: $color-white-0;
+                font-size: $fs-0;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                -ms-border-radius: 0;
+                -o-border-radius: 0;
+                border: none;
+                cursor: pointer;
+                i {
+                    color: $color-red-0;
+                }
+                &:hover {
+                    background-color: $color-red-0;
+                    i {
+                        color: $color-white-0;
+                    }
+                }
+            }
+        }
+    }
+}

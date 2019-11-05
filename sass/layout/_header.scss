@@ -18,5 +18,122 @@
                 color: $color-gray-2;
             }
         }
+        .form_search {
+            flex-grow: 4;
+            input {
+                background-color: $color-gray-1;
+                font-size: $fs-0;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                -ms-border-radius: 0;
+                -o-border-radius: 0;
+                border: 1px solid $color-gray-1;
+                border-right: 1px solid transparent;
+                padding: $pd-1 + 2 $pd-1 + 5;
+                &:focus {
+                    background-color: $color-white-0;
+                    border: 1px solid $color-gray-3;
+                    box-shadow: none;
+                }
+            }
+            .input-group-text {
+                // padding: 6px 12px;
+                background-color: $color-gray-1;
+                font-size: $fs-0;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                -ms-border-radius: 0;
+                -o-border-radius: 0;
+                border: none;
+                cursor: pointer;
+                i {
+                    color: $color-red-0;
+                }
+                &:hover {
+                    background-color: $color-red-0;
+                    i {
+                        color: $color-white-0;
+                    }
+                }
+            }
+        }
+    }
+    #myNavbarId {
+        .nav-item {
+            flex-grow: 1;
+            position: relative;
+            .overlay {
+                display: none;
+                position: absolute;
+                background-color: $color-white-0;
+                padding: $pd-2;
+                border: 1px solid $color-gray-2;
+                width: 350px;
+                top: 56px;
+                left: -100%;
+                &::before {
+                    content: "";
+                    width: 15px;
+                    height: 15px;
+                    position: absolute;
+                    top: -9%;
+                    right: 10%;
+                    background-color: $color-white-0;
+                    transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    border-top: 1px solid $color-gray-2;
+                    border-left: 1px solid $color-gray-2;
+                    z-index: 3;
+                }
+            }
+            .nav-link {
+                @include text($color-black-light, $fs-1, $fw-normal);
+                margin-top: $mg-0 + 3;
+            }
+            &:hover {
+                background-color: $color-gray-1;
+                .overlay {
+                    display: block;
+                    z-index: 2;
+                }
+            }
+        }
+        .icon__cart {
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            max-width: 50px;
+            i {
+                font-size: $fs-2;
+            }
+        }
+        .nav__button {
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+    @include reponds-to("extra-large") {
+        #myNavbarId {
+            .bussiness,
+            .instructor {
+                display: none;
+            }
+        }
+    }
+    @include reponds-to("medium") {
+        .myNavBar__left {
+            .catagories,
+            .form__search {
+                display: none;
+            }
+        }
     }
 }

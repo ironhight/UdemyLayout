@@ -24,7 +24,7 @@
 <body>
     <!-- header -->
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light myNavBar">
+        <nav class="navbar navbar-expand-md navbar-light myNavBar">
             <div class="col-xl-6 col-lg-9 col-md-8 col-sm-6">
                 <div class="row myNavBar__left">
                     <a class="navbar-brand" href="#"><img src="img/logo-coral.svg" alt=""></a>
@@ -32,24 +32,25 @@
                         <i class="fas fa-th"></i>
                         <span>Catagories</span>
                     </div>
-                    <form action="" class="form__search">
+                    <form action="" class="form_search">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Search for Cousers">
-                            <p class="input-group--append">
-                                <!-- <span class="input-group-text"> -->
-                                <i class="fas fa-search"></i>
-                            </p>
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarId"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="col-xl-6 col-lg-3 col-md-4 col-sm-6">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
+                <div class="collapse navbar-collapse" id="myNavbarId">
+                    <ul class="navbar-nav w-100 d-flex text-center">
                         <li class="nav-item bussiness">
                             <a class="nav-link" href="#">Udemy for Bussiness</a>
                             <div class="overlay">
@@ -68,10 +69,8 @@
                             <a href="#" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
                         </li>
                         <li class="nav-item nav__button">
-                            <a class="nav-link" href="#">
-                                <button class="button button__login">Log In</button>
-                                <button class="button button__sighup">Sigh Up</button>
-                            </a>
+                            <button class="button btn--login">Log In</button>
+                            <button class="button btn--signup">Sign Up</button>
                         </li>
                     </ul>
                 </div>
@@ -79,7 +78,22 @@
         </nav>
     </header>
     <!-- cover -->
-    <section class="cover"></section>
+    <section class="cover">
+        <div class="cover__container">
+            <h1 class="cover__title">Learn on your schedule</h1>
+            <p class="cover__detail">Study any topic, anytime. Explore thousands of courses for as low as $19.99</p>
+            <form action="" class="form_cover_search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="What do you want to learn?">
+                    <div class="input-group-append">
+                        <span class="input-group-text">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
     <!-- intro -->
     <section class="intro"></section>
     <!-- couser -->
