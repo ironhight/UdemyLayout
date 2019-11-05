@@ -1,0 +1,22 @@
+.myNavBar {
+    padding: $pd-1;
+    border-bottom: 1px solid $color-gray-3;
+
+    .myNavBar__left {
+        flex-wrap: wrap; // tự động nhảy nhiều dòng nếu cần thiết
+        .navbar-brand {
+            img {
+                width: 110px;
+            }
+            flex-grow: 1; //tăng thêm 1 cái navbar nữa, làm tăng khoảng trống linh hoạt
+        }
+        .catagories {
+            @include text($color-black-light, $fs-1, $fw-normal);
+            cursor: pointer;
+            flex-grow: 1;
+            i {
+                color: $color-gray-2;
+            }
+        }
+    }
+}

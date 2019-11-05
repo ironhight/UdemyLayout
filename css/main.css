@@ -1,2 +1,29 @@
-.hello {
-  color: black; }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif; }
+
+body {
+  font-size: 15px;
+  line-height: 1.43;
+  color: #29303b;
+  background-color: #fff; }
+
+.myNavBar {
+  padding: 10px;
+  border-bottom: 1px solid #cacbcc; }
+  .myNavBar .myNavBar__left {
+    flex-wrap: wrap; }
+    .myNavBar .myNavBar__left .navbar-brand {
+      flex-grow: 1; }
+      .myNavBar .myNavBar__left .navbar-brand img {
+        width: 110px; }
+    .myNavBar .myNavBar__left .catagories {
+      color: #505763;
+      font-size: 13px;
+      font-weight: normal;
+      cursor: pointer;
+      flex-grow: 1; }
+      .myNavBar .myNavBar__left .catagories i {
+        color: #a1a7b3; }
