@@ -9,14 +9,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- fa5 -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
-        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <!-- owl carousel js -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
-        integrity="sha256-nXBV7Gr2lU0t+AwKsnS05DYtzZ81oYTXS6kj7LBQHfM=" crossorigin="anonymous" />
+    <!-- fa4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- owl carousel css -->
+    <link rel="stylesheet" href="./sass/vendors/owlCarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./sass/vendors/owlCarousel/css/owl.theme.default.min.css">
+
     <!-- main css -->
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -29,7 +27,7 @@
                 <div class="row myNavBar__left">
                     <a class="navbar-brand" href="#"><img src="img/logo-coral.svg" alt=""></a>
                     <div class="catagories">
-                        <i class="fas fa-th"></i>
+                        <i class="fa fa-th" aria-hidden="true"></i>
                         <span>Catagories</span>
                     </div>
                     <form action="" class="form_search">
@@ -37,7 +35,7 @@
                             <input type="text" class="form-control" placeholder="Search for Cousers">
                             <div class="input-group-append">
                                 <span class="input-group-text">
-                                    <i class="fas fa-search"></i>
+                                    <i class="fa fa-search" aria-hidden="true"></i>
                                 </span>
                             </div>
                         </div>
@@ -66,7 +64,7 @@
                             </div>
                         </li>
                         <li class="nav-item icon__cart">
-                            <a href="#" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#" class="nav-link"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
                         </li>
                         <li class="nav-item nav__button">
                             <button class="button btn--login">Log In</button>
@@ -87,7 +85,7 @@
                     <input type="text" class="form-control" placeholder="What do you want to learn?">
                     <div class="input-group-append">
                         <span class="input-group-text">
-                            <i class="fas fa-search"></i>
+                            <i class="fa fa-search" aria-hidden="true"></i>
                         </span>
                     </div>
                 </div>
@@ -95,9 +93,230 @@
         </div>
     </section>
     <!-- intro -->
-    <section class="intro"></section>
+    <section class="intro container-fluid">
+        <div class="intro__content row">
+            <div class="intro__detail">
+                <div class="row m-0">
+                    <div class="intro__icon">
+                        <i class="fa fa-bullseye" aria-hidden="true"></i>
+                    </div>
+                    <div class="intro__sub_detail">
+                        <b>80,000 online courses</b>
+                        <p>Explore a variety of fresh topics</p>
+                    </div>
+                </div>
+            </div>
+            <div class="intro__detail">
+                <div class="row m-0">
+                    <div class="intro__icon">
+                        <i class="fa fa-spinner" aria-hidden="true"></i>
+                    </div>
+                    <div class="intro__sub_detail">
+                        <b>Expert instruction</b>
+                        <p>Find the right instructor for you</p>
+                    </div>
+                </div>
+            </div>
+            <div class="intro__detail">
+                <div class="row m-0">
+                    <div class="intro__icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+                    <div class="intro__sub_detail">
+                        <b>80,000 online courses</b>
+                        <p>Explore a variety of fresh topics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- couser -->
-    <section class="couser"></section>
+    <section class="couser container-fluid">
+        <div class="couser__content">
+            <div class="row">
+                <div class="col-xl-4 col-lg-3 col-md-3">
+                    <h2 class="couser__title">The world’s largest selection of courses</h2>
+                    <p>Choose from over 80,000 online video courses with new additions published every month</p>
+                </div>
+                <div class="col-xl-8 col-lg-9 col-md-9">
+                    <ul class="nav nav-tabs myTab">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#development">Development</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#design">Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#bussiness">Bussiness</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#it">IT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#personal">Personal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#marketing">Marketing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#photography">Photography</a>
+                        </li>
+                    </ul>
+                    <!-- tab panes -->
+                    <div class="tab-content myContent">
+                        <div class="tab-pane active" id="development">
+                            <div class="owl-carousel owl-theme">
+                                <div class="card">
+                                    <img src="./img/kh1.jpg" alt="" class=".card-img-top">
+                                    <div class="card-body">
+                                        <div class="card-body__content">
+                                            <h4 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
+                                                Expert</h4>
+                                            <p class="card-text">Colt Steele Ian Schoonover</p>
+                                            <span class="star">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="number-average">4.6</span>
+                                            <span class="number-rating">(11.597)</span>
+                                            <p class="price">
+                                                <span>$179.99</span>
+                                                <span>$9.99</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh2.jpg" alt="" class=".card-img-top">
+                                    <div class="card-body">
+                                        <div class="card-body__content">
+                                            <h4 class="card-title">Learning Python for Data Analysis and Visualization
+                                            </h4>
+                                            <p class="card-text">Jose Portilla</p>
+                                            <span class="star">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="number-average">4.6</span>
+                                            <span class="number-rating">(11.597)</span>
+                                            <p class="price">
+                                                <span>$179.99</span>
+                                                <span>$9.99</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh3.jpg" alt="" class=".card-img-top">
+                                    <div class="card-body">
+                                        <div class="card-body__content">
+                                            <h4 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and
+                                                More!</h4>
+                                            <p class="card-text">Jonas Schmedtmann</p>
+                                            <span class="star">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="number-average">4.6</span>
+                                            <span class="number-rating">(11.597)</span>
+                                            <p class="price">
+                                                <span>$179.99</span>
+                                                <span>$9.99</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh4.jpg" alt="" class=".card-img-top">
+                                    <div class="card-body">
+                                        <div class="card-body__content">
+                                            <h4 class="card-title">Modern JavaScript From The Beginning</h4>
+                                            <p class="card-text">Brad Traversy</p>
+                                            <span class="star">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="number-average">4.6</span>
+                                            <span class="number-rating">(11.597)</span>
+                                            <p class="price">
+                                                <span>$179.99</span>
+                                                <span>$9.99</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh5.jpg" alt="" class=".card-img-top">
+                                    <div class="card-body">
+                                        <div class="card-body__content">
+                                            <h4 class="card-title">Bootstrap 4 From Scratch With 5 Projects</h4>
+                                            <p class="card-text">Brad Traversy</p>
+                                            <span class="star">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="number-average">4.6</span>
+                                            <span class="number-rating">(11.597)</span>
+                                            <p class="price">
+                                                <span>$179.99</span>
+                                                <span>$9.99</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh6.jpg" alt="" class=".card-img-top">
+                                    <div class="card-body">
+                                        <div class="card-body__content">
+                                            <h4 class="card-title">iOS 12 & Swift - The Complete iOS App Development
+                                                Bootcamp</h4>
+                                            <p class="card-text">Angela Yu</p>
+                                            <span class="star">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="number-average">4.6</span>
+                                            <span class="number-rating">(11.597)</span>
+                                            <p class="price">
+                                                <span>$179.99</span>
+                                                <span>$9.99</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="design">...</div>
+                        <div class="tab-pane" id="bussiness">...</div>
+                        <div class="tab-pane" id="it">...</div>
+                        <div class="tab-pane" id="personal">...</div>
+                        <div class="tab-pane" id="marketing">...</div>
+                        <div class="tab-pane" id="photography">...</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
     <!-- viewing -->
     <section class="viewing"></section>
     <!-- categories -->
@@ -113,7 +332,7 @@
     <!-- footer -->
     <footer class="footer"></footer>
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, owl Carousel js-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
         </script>
@@ -123,7 +342,66 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
         </script>
+    <script src="./sass/vendors/owlCarousel/js/owl.carousel.min.js"></script>
 
+    <!-- owl-carousel js-->
+    <script>
+        $('.clonex2-carousel').owlCarousel({
+            loop: true,
+            nav: true,
+            dots: false,
+            margin: 15,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+    <script>
+        $('.clone-carousel').owlCarousel({
+            loop: true,
+            nav: true,
+            dots: false,
+            margin: 15,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>

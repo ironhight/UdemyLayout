@@ -1,0 +1,85 @@
+.couser {
+    margin: $mg-2 0;
+    .couser__content {
+        width: 80%;
+        margin: auto;
+        .couser__title {
+            @include text($color-black-0, $fs-4 - 4, $fw-normal);
+            padding-top: 8rem;
+        }
+    }
+    .myTab {
+        margin-bottom: $mg-2;
+        border-bottom: none;
+        .nav-link {
+            @include text($color-black-0, $fs-0, $fw-normal);
+            &:hover {
+                border: none;
+            }
+            &.active {
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: 5px solid $color-blue;
+            }
+        }
+    }
+    .myContent {
+        // position: relative;
+        .card {
+            height: 275px;
+            overflow: hidden;
+            .card-body {
+                padding: 1rem;
+                .card-title {
+                    display: -webkit-box; //hien thi tren webkit
+                    overflow: hidden;
+                    text-overflow: ellipsis; //them phan hide la ...
+                    min-height: 39px;
+                    line-clamp: 2; //dong hien thi doi ta
+                    -webkit-line-clamp: 2;
+                    -moz-line-clamp: 2;
+                    -ms-line-clamp: 2;
+                    -o-line-clamp: 2;
+                    box-orient: vertical; //du lieu hien thi theo chieu doc //chieu doc, toi da 2 dong, hon thi ...
+                    -webkit-box-orient: vertical;
+                    // -moz-box-orient: vertical;
+                    // -ms-box-orient: vertical;
+                    // -o-box-orient: vertical;
+                    @include text($color-black-0, $fs-0, $fw-normal);
+                }
+                .card-text {
+                    @include text($color-gray-4, $fs-1 - 1, $fw-normal);
+                    margin: $mg-1 - 5 0;
+                }
+                .star {
+                    @include text($color-yellow, $fs-1 - 1, $fw-normal);
+                }
+                .number-average {
+                    @include text($color-gray-4, $fs-1, $fw-bold-0);
+                }
+                .number-rating {
+                    @include text($color-gray-4, $fs-1, $fw-normal);
+                }
+                .price {
+                    text-align: right;
+                    padding: $pd-1 0;
+                    span:first-child {
+                        @include text($color-gray-4, $fs-1, $fw-normal);
+                        text-decoration: line-through; //chu ganh ngang chinh giua
+                    }
+                    span:last-child {
+                        @include text($color-black-0, $fs-0, $fw-bold-0);
+                    }
+                }
+            }
+        }
+    }
+    @include reponds-to("medium") {
+        .couser__content {
+            .couser__title {
+                padding-top: 1rem;
+            }
+        }
+    }
+}

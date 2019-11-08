@@ -1,0 +1,35 @@
+.owl-next,
+.owl-prev {
+    color: #00576b !important;
+    font-size: $fs-3 !important;
+    box-shadow: 0 2px 8px 2px $color-black-dark;
+    width: 44px;
+    height: 44px;
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+    position: absolute;
+    top: 35%;
+    right: -30px;
+    background-color: $color-white-0 !important;
+    z-index: 2;
+}
+.owl-prev {
+    color: #00576b !important;
+    font-size: $fs-3 !important;
+    box-shadow: 0 2px 8px 2px $color-black-dark;
+    width: 44px;
+    height: 44px;
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+    position: absolute;
+    top: 35%;
+    left: -30px;
+    background-color: $color-white-0 !important;
+    z-index: 2;
+}

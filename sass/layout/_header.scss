@@ -20,43 +20,21 @@
         }
         .form_search {
             flex-grow: 4;
-            input {
-                background-color: $color-gray-1;
-                font-size: $fs-0;
-                border-radius: 0;
-                -webkit-border-radius: 0;
-                -moz-border-radius: 0;
-                -ms-border-radius: 0;
-                -o-border-radius: 0;
-                border: 1px solid $color-gray-1;
-                border-right: 1px solid transparent;
-                padding: $pd-1 + 2 $pd-1 + 5;
-                &:focus {
-                    background-color: $color-white-0;
-                    border: 1px solid $color-gray-3;
-                    box-shadow: none;
-                }
-            }
+            @include form-search(
+                $color-gray-1,
+                $fs-0,
+                0,
+                1px solid $color-gray-1,
+                1px solid transparent,
+                $pd-1 + 2 $pd-1 + 5,
+                $color-white-0,
+                1px solid $color-gray-3,
+                none
+            );
             .input-group-text {
                 // padding: 6px 12px;
                 background-color: $color-gray-1;
-                font-size: $fs-0;
-                border-radius: 0;
-                -webkit-border-radius: 0;
-                -moz-border-radius: 0;
-                -ms-border-radius: 0;
-                -o-border-radius: 0;
-                border: none;
-                cursor: pointer;
-                i {
-                    color: $color-red-0;
-                }
-                &:hover {
-                    background-color: $color-red-0;
-                    i {
-                        color: $color-white-0;
-                    }
-                }
+                @extend .input_text;
             }
         }
     }

@@ -4,3 +4,23 @@
     background-repeat: no-repeat;
     height: 500px;
 }
+.input_text {
+    font-size: $fs-0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border: none;
+    cursor: pointer;
+    i {
+        color: $color-red-0;
+    }
+    &:hover {
+        background-color: $color-red-0;
+
+        i {
+            color: $color-white-0;
+        }
+    }
+}

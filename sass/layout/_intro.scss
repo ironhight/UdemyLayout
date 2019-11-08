@@ -1,0 +1,45 @@
+.intro {
+    background: linear-gradient(-45deg, $color-red-0, $color-purple);
+    padding: $pd-2;
+    .intro__content {
+        width: 80%;
+        margin: auto;
+        .intro__detail {
+            flex-grow: 1;
+            padding-top: $pd-1;
+            .intro__icon {
+                width: 50px;
+                margin-right: $mg-2;
+                i {
+                    font-size: 50px;
+                    color: $color-white-0;
+                }
+            }
+            .intro__sub_detail {
+                b {
+                    @include text($color-white-0, $fs-0 + 2, $fw-bold-1);
+                }
+                p {
+                    @include text($color-white-0, $fs-0, $fw-normal);
+                }
+            }
+        }
+    }
+    @include reponds-to("extra-large") {
+        .intro__content {
+            width: 90%;
+            .intro__detail {
+                .intro__icon {
+                    width: 0px;
+                    i {
+                        width: 0px;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    @include reponds-to("medium") {
+        display: none;
+    }
+}

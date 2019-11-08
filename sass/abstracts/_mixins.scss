@@ -28,3 +28,22 @@
         @warn "`{$breakpoint}` isn't in breakpoints";
     }
 }
+@mixin form-search($bg-color, $fs, $b-radius, $b, $b-right, $p, $bg-color-hover, $b-hover, $box-shadow-hover) {
+    input {
+        background-color: $bg-color;
+        font-size: $fs;
+        border-radius: $b-radius;
+        -webkit-border-radius: $b-radius;
+        -moz-border-radius: $b-radius;
+        -ms-border-radius: $b-radius;
+        -o-border-radius: $b-radius;
+        border: $b;
+        border-right: $b-right;
+        padding: $p;
+        &:focus {
+            background-color: $bg-color-hover;
+            border: $b-hover;
+            box-shadow: $box-shadow-hover;
+        }
+    }
+}
