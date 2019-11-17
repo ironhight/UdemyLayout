@@ -271,6 +271,9 @@ body {
         -o-line-clamp: 2;
         box-orient: vertical;
         -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -ms-box-orient: vertical;
+        -o-box-orient: vertical;
         color: #29303b;
         font-size: 15px;
         font-weight: normal; }
@@ -306,6 +309,65 @@ body {
   @media screen and (max-width: 768px) {
     .couser .couser__content .couser__title {
       padding-top: 1rem; } }
+
+.view {
+  margin-top: 25px; }
+  .view .view__content {
+    width: 80%;
+    margin: auto;
+    position: relative; }
+    .view .view__content .card {
+      height: 275px;
+      overflow: hidden; }
+      .view .view__content .card .card-body {
+        padding: 1rem; }
+        .view .view__content .card .card-body .card-title {
+          display: -webkit-box;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          min-height: 39px;
+          line-clamp: 2;
+          -webkit-line-clamp: 2;
+          -moz-line-clamp: 2;
+          -ms-line-clamp: 2;
+          -o-line-clamp: 2;
+          box-orient: vertical;
+          -webkit-box-orient: vertical;
+          -moz-box-orient: vertical;
+          -ms-box-orient: vertical;
+          -o-box-orient: vertical;
+          color: #29303b;
+          font-size: 15px;
+          font-weight: normal; }
+        .view .view__content .card .card-body .card-text {
+          color: #686f7a;
+          font-size: 12px;
+          font-weight: normal;
+          margin: 5px 0; }
+        .view .view__content .card .card-body .star {
+          color: #f4c150;
+          font-size: 12px;
+          font-weight: normal; }
+        .view .view__content .card .card-body .number-average {
+          color: #686f7a;
+          font-size: 13px;
+          font-weight: 600; }
+        .view .view__content .card .card-body .number-rating {
+          color: #686f7a;
+          font-size: 13px;
+          font-weight: normal; }
+        .view .view__content .card .card-body .price {
+          text-align: right;
+          padding: 10px 0; }
+          .view .view__content .card .card-body .price span:first-child {
+            color: #686f7a;
+            font-size: 13px;
+            font-weight: normal;
+            text-decoration: line-through; }
+          .view .view__content .card .card-body .price span:last-child {
+            color: #29303b;
+            font-size: 15px;
+            font-weight: 600; }
 
 .btn--login {
   font-size: 15px;

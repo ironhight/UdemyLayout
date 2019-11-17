@@ -1,31 +1,9 @@
-.couser {
-    margin: $mg-2 0;
-    .couser__content {
+.view {
+    margin-top: $mg-2;
+    .view__content {
         width: 80%;
         margin: auto;
-        .couser__title {
-            @include text($color-black-0, $fs-4 - 4, $fw-normal);
-            padding-top: 8rem;
-        }
-    }
-    .myTab {
-        margin-bottom: $mg-2;
-        border-bottom: none;
-        .nav-link {
-            @include text($color-black-0, $fs-0, $fw-normal);
-            &:hover {
-                border: none;
-            }
-            &.active {
-                border-top: none;
-                border-left: none;
-                border-right: none;
-                border-bottom: 5px solid $color-blue;
-            }
-        }
-    }
-    .myContent {
-        // position: relative;
+        position: relative;
         .card {
             height: 275px;
             overflow: hidden;
@@ -72,13 +50,6 @@
                         @include text($color-black-0, $fs-0, $fw-bold-0);
                     }
                 }
-            }
-        }
-    }
-    @include reponds-to("medium") {
-        .couser__content {
-            .couser__title {
-                padding-top: 1rem;
             }
         }
     }
