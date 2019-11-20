@@ -1,0 +1,19 @@
+.job {
+    background-color: $color-gray-5;
+    padding-top: $pd-2;
+    .job__content {
+        width: 60%;
+        margin: auto;
+        .teaching {
+            padding: $pd-2;
+            h1 {
+                @include text($color-black-light, $fs-2, $fw-bold-0);
+            }
+        }
+    }
+    @include reponds-to("extra-large") {
+        .job__content {
+            width: 80%;
+        }
+    }
+}

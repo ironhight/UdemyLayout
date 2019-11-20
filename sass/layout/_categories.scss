@@ -1,0 +1,21 @@
+.categories {
+    margin-top: $mg-2;
+    .categories__content {
+        width: 80%;
+        margin: auto;
+        .item {
+            padding: $pd-1 + 5;
+            border: 1px solid $color-black-dark;
+            cursor: pointer;
+            font-size: $fs-2 - 2;
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -o-border-radius: 2px;
+            &:hover {
+                box-shadow: 0 0 1px 1px $color-black-dark, 0 3px 1px 0 $color-black-dark; //2 cai nghia la no ghi de
+            }
+        }
+    }
+}

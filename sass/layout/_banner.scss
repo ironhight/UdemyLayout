@@ -1,0 +1,17 @@
+.banner {
+    background: url(https://udemy-images.udemy.com/logos/udemy-logo-semi-transparent.svg) 0/30% no-repeat,
+        linear-gradient(61deg, #6e1a52, #76c5d6 42%);
+    background-blend-mode: overlay;
+    height: 325px;
+    padding: 50px;
+    h1 {
+        @include text($color-white-0, $fs-4 - 4, $fw-normal);
+    }
+    p {
+        margin-bottom: 0;
+        @include text($color-white-0, $fs-0, $fw-normal);
+    }
+    button {
+        margin: $mg-1 0;
+    }
+}

@@ -1,4 +1,4 @@
-.background_cover, .cover {
+.background_cover, .cover, .student .student__content .card .card-body .image__student {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -368,6 +368,185 @@ body {
             color: #29303b;
             font-size: 15px;
             font-weight: 600; }
+
+.categories {
+  margin-top: 25px; }
+  .categories .categories__content {
+    width: 80%;
+    margin: auto; }
+    .categories .categories__content .item {
+      padding: 15px;
+      border: 1px solid rgba(20, 23, 28, 0.1);
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 2px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      -o-border-radius: 2px; }
+      .categories .categories__content .item:hover {
+        box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1); }
+
+.student {
+  margin-top: 25px; }
+  .student .student__content {
+    width: 80%;
+    margin: auto;
+    position: relative; }
+    .student .student__content .card {
+      height: 350px;
+      overflow: hidden; }
+      .student .student__content .card .card-body {
+        padding: 2rem; }
+        .student .student__content .card .card-body .image__student {
+          height: 64px;
+          width: 64px;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%; }
+        .student .student__content .card .card-body .star {
+          color: #f4c150;
+          font-size: 12px;
+          font-weight: normal; }
+        .student .student__content .card .card-body .student-1 {
+          background-image: url("https://udemy-images.udemy.com/user/100x100/17241262_3f92.jpg"); }
+        .student .student__content .card .card-body .student-2 {
+          background-image: url("https://udemy-images.udemy.com/user/100x100/12747308_fa54.jpg"); }
+        .student .student__content .card .card-body .student-3 {
+          background-image: url("https://udemy-images.udemy.com/user/100x100/32569788_ca17.jpg"); }
+        .student .student__content .card .card-body .student-4 {
+          background-image: url("https://udemy-images.udemy.com/user/100x100/22683662_26dd_2.jpg"); }
+        .student .student__content .card .card-body .student-5 {
+          background-image: url("https://udemy-images.udemy.com/user/100x100/25234256_a0dd.jpg"); }
+        .student .student__content .card .card-body .student-6 {
+          background-image: url("https://udemy-images.udemy.com/user/100x100/16543918_6bdb.jpg"); }
+        .student .student__content .card .card-body .student__couser {
+          color: #007791;
+          font-size: 15px;
+          font-weight: normal; }
+        .student .student__content .card .card-body .student__class {
+          color: #007791;
+          font-size: 15px;
+          font-weight: 700; }
+
+.banner {
+  background: url(https://udemy-images.udemy.com/logos/udemy-logo-semi-transparent.svg) 0/30% no-repeat, linear-gradient(61deg, #6e1a52, #76c5d6 42%);
+  background-blend-mode: overlay;
+  height: 325px;
+  padding: 50px; }
+  .banner h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: normal; }
+  .banner p {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: normal; }
+  .banner button {
+    margin: 10px 0; }
+
+.partner {
+  padding-top: 20px;
+  background-color: #f7f8fa; }
+  .partner .partner__content {
+    width: 70%;
+    margin: auto; }
+    .partner .partner__content .image__partner {
+      justify-content: space-between; }
+  @media screen and (max-width: 1200px) {
+    .partner .partner__content {
+      width: 80%; } }
+  @media screen and (max-width: 768px) {
+    .partner .partner__content {
+      width: 50%; }
+      .partner .partner__content .item {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 10px; } }
+
+.job {
+  background-color: #f7f8fa;
+  padding-top: 20px; }
+  .job .job__content {
+    width: 60%;
+    margin: auto; }
+    .job .job__content .teaching {
+      padding: 20px; }
+      .job .job__content .teaching h1 {
+        color: #505763;
+        font-size: 20px;
+        font-weight: 600; }
+  @media screen and (max-width: 1200px) {
+    .job .job__content {
+      width: 80%; } }
+
+.footer hr {
+  margin: 0; }
+
+.footer .item {
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.footer .footer__main {
+  margin: 40px auto 30px; }
+  .footer .footer__main .footer__links--main {
+    padding-left: 15px;
+    padding-right: 15px; }
+    .footer .footer__main .footer__links--main ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 110px;
+      list-style: none; }
+      .footer .footer__main .footer__links--main ul li {
+        flex: 25%;
+        flex-grow: 0; }
+        .footer .footer__main .footer__links--main ul li a {
+          color: #007791; }
+        .footer .footer__main .footer__links--main ul li a:hover {
+          text-decoration: none;
+          color: #003845; }
+  .footer .footer__main .select__language {
+    padding-left: 15px;
+    padding-right: 15px; }
+    .footer .footer__main .select__language .btn--group {
+      display: flex;
+      margin-left: 190px;
+      border: 1px solid black;
+      background-color: #fff;
+      padding: 10px; }
+      .footer .footer__main .select__language .btn--group i,
+      .footer .footer__main .select__language .btn--group p {
+        margin-bottom: 0px;
+        padding-right: 15px; }
+
+.footer .footer__bottom {
+  margin: 30px auto; }
+  .footer .footer__bottom img {
+    width: 110px; }
+  .footer .footer__bottom .footer__copyright {
+    margin-left: 20px; }
+    .footer .footer__bottom .footer__copyright p {
+      color: #686f7a;
+      font-size: 13px;
+      font-weight: normal; }
+
+.footer .footer__links--bottom ul {
+  display: flex;
+  justify-content: flex-end; }
+  .footer .footer__links--bottom ul li a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: #686f7a;
+    font-size: 13px;
+    font-weight: normal; }
+
+.footer .hr-primary {
+  border-top: 6px solid #ec5252; }
 
 .btn--login {
   font-size: 15px;

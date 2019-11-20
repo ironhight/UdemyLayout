@@ -1,0 +1,52 @@
+.student {
+    margin-top: $mg-2;
+    .student__content {
+        width: 80%;
+        margin: auto;
+        position: relative;
+        .card {
+            height: 350px;
+            overflow: hidden;
+            .card-body {
+                padding: 2rem;
+                .image__student {
+                    @extend .background_cover;
+                    height: 64px;
+                    width: 64px;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+                .star {
+                    @include text($color-yellow, $fs-1 - 1, $fw-normal);
+                }
+                .student-1 {
+                    background-image: url("https://udemy-images.udemy.com/user/100x100/17241262_3f92.jpg");
+                }
+                .student-2 {
+                    background-image: url("https://udemy-images.udemy.com/user/100x100/12747308_fa54.jpg");
+                }
+                .student-3 {
+                    background-image: url("https://udemy-images.udemy.com/user/100x100/32569788_ca17.jpg");
+                }
+                .student-4 {
+                    background-image: url("https://udemy-images.udemy.com/user/100x100/22683662_26dd_2.jpg");
+                }
+                .student-5 {
+                    background-image: url("https://udemy-images.udemy.com/user/100x100/25234256_a0dd.jpg");
+                }
+                .student-6 {
+                    background-image: url("https://udemy-images.udemy.com/user/100x100/16543918_6bdb.jpg");
+                }
+                .student__couser {
+                    @include text($color-blue, $fs-0, $fw-normal);
+                }
+                .student__class {
+                    @include text($color-blue, $fs-0, $fw-bold-1);
+                }
+            }
+        }
+    }
+}

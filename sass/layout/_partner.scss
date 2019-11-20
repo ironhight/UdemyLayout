@@ -1,0 +1,26 @@
+.partner {
+    padding-top: $pd-2;
+    background-color: $color-gray-5;
+    .partner__content {
+        width: 70%;
+        margin: auto;
+        .image__partner {
+            justify-content: space-between;
+        }
+    }
+    @include reponds-to("extra-large") {
+        .partner__content {
+            width: 80%;
+        }
+    }
+    @include reponds-to("medium") {
+        .partner__content {
+            width: 50%;
+            .item {
+                width: 50%;
+                text-align: center;
+                margin-bottom: $mg-1;
+            }
+        }
+    }
+}
